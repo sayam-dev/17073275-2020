@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Custom-cursor (JavaScript) - blog 6">
+    <meta name="description" content="custom cursor made with JavaScript">
+    <meta name="keywords" content="portfolio, customised cursor,cursor,personal portfolio, sayam ajmal portfolio, JavaScript,design, blog 6,web developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Custom-cursor (JavaScript) - blog 6</title>
+</head>
+<body>
+
+
+  <div class="cursor"></div>
+ 
+
+    <header>
+
+
+        <h1 class="logo"><a href="/index.html">Sayam Ajmal</a></h1>
+        
+        <div class="circle-two"></div>
+        <div class="text-inside"><p>PORTFOLIO</p></div>
+        <div class="social-media">
+
+          <a href="https://www.facebook.com/sasincerity.sayamajmal"><img src="/Images/facebook.svg" alt="Facebook logo" class="facebook"></a>
+
+          <a href="https://github.com/sayam-aj"><img src="/Images/github-image.svg" alt="github logo"  class="github"></a>
+
+          <a href="https://twitter.com/Sayam_Ajmal"><img src="/Images/twitter.svg"  alt="Twitter logo" class="twitter"></a> 
+        </div>
+
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+          <ul>
+            
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/Pages/blogs.html">BLOGS</a></li>
+                <li><a href="/Pages/gallery.html">GALLERY</a></li>
+                     <li><a href="/Pages/contact.html">CONTACT</a></li>
+                     <li class="circle-four"></li>
+          </ul>
+        </nav>
+
+         <!-- THIS WILL MAKE A TOGGLE ICON -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+
+
+      </header>
+
+
+<div class="blg-contnr">
+
+    <div class="blg-titles">
+        <h1>Custom-cursor</h1>
+    </div>
+
+    <div class="blg-texts">
+        <h2>AIMS & OBJECTIVES</h2>
+        <p>The aim is to create a unique customised cursor which enables the portfolio to stand out, to further enhance user experience.</p>
+
+        <br>
+
+        <p>To  illustrate a custom cursor pointer that will be unique and different compared to typical cursors on the websites by the help of JavaScript, as
+            JavaScript has the capability to execute more functions, I will also be using CSS properties to create the shape for the cursor.
+            </p>
+    
+            <h2>Definition</h2>
+
+            <p>A cursor is an indicator to display the current location for user interaction on the display gadgets that usually respond to input and converts it to a pointing device which looks like a shape of an arrow.</p>
+<br>
+            <p>As the default display of a mouse cursor is in a shape of an arrow, therefore I decided to create a unique experience for the users by making a customised cursor that the users will be able to notice as they roam through the portfolio.
+ I originally wanted to create the cursor by just using CSS but according to <span class="blg-links"><a href="https://css-tricks.com/almanac/properties/c/cursor/">(Cope, 2019).</a></span>
+  CSS currently only supports certain functionality for the cursor properties.  Hence,  then I decided to illustrate the custom cursor by the help of JavaScript, as JavaScript has the facility to execute more functions, I will also be using CSS properties to create the appearance for the cursor. Allowing me to fully express and create the technology that was originally intended
+  <br>
+  The appearance of the cursor will be converted to a circular shape by the help of CSS. The cursor should change shape as it hovers over a link with the help of JavaScript and CSS. 
+the reason for doing this is because it will determine the users that it must be a significant piece of the website, which will determine that it’s a link.
+<br><br>
+ As soon as the shape of the cursor changes the cursor; property called pointer which looks like a hand with an index finger will also be displayed in the middle of the custom cursor so it makes it obvious to the users that it’s clickable. This will be done as this conveys the default idea of certain functionality when typically clicking on a link on a browser.
+<br>
+<br>
+I would commend myself to be a beginner at using JavaScript, as I believe I have a long way to go until I fully understand the programming language to be proficient enough to take on bigger projects which include JavaScript. A few months ago I created a hamburger menu from CSS and JavaScript, which you can view by clicking <span class="blg-links"><a href="http://www.17073275.webdevmmu.uk/Ashton-market-17073275/index.html">here</a></span>
+This shows that I am comfortable enough to understand some of the fundamentals which mainly require JavaScript animation.
+</p>
+
+<h2>Tools and Technologies</h2>
+
+<p>The tools that I used to create this project was mainly JavaScript to make the cursor function properly. I used the array method, event listeners, query selector method and function method. I also used CSS properties to create the shape of the cursor and CSS animation and transition for subtle animation when the cursor changes shape.</p>
+
+
+
+
+<h2>Location</h2>
+
+<p><span class="blg-links"><a href="https://codepen.io/sayam-web/pens/public">Link to repository</a></span></p>
+
+<h2>How</h2>
+<p>
+So the first thing I created was the JavaScript file called custom-cursor.js and a class called <span class="blg-links">"cursor"</span>
+</p>
+
+
+<p>Then I decided to add style properties to the cursor class, by adding height, width and gave it a border to give it color, this lead to a box to appear on the screen.</p>
+
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="qBdvrvP" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="1st step">
+    <span>See the Pen <a href="https://codepen.io/sayam-web/pen/qBdvrvP">
+    1st step</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<p>Because I wanted my cursor to be in a shape of a circle, I applied border radius of 50% to the class element. Then I added a position absolute to it , because through JavaScript I was going to modify the top and bottom position of the cursor.</p>
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="GRJemWL" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="step2">
+    <span>See the Pen <a href="https://codepen.io/sayam-web/pen/GRJemWL">
+    step2</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>A problem arose as I couldn’t identify the cursor on the page, so in order to fix the situation I increased the size of the border to 50px, to identify where the cursor was located. I realised what the issue was; the issue was due to the header element which had z -index of 1, which put the stack order of the header element forward.</p>
+
+
+
+<img src="/Images/cursor-size.jpg" alt="cursor">
+
+
+
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="GRJemQb" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="step3">
+    <span>See the Pen <a href="https://codepen.io/sayam-web/pen/GRJemQb">
+    step3</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+  <p>You can see it in the CSS.
+    To climate the problem I  gave the cursor element a z-index and gave it a value of 2 ,increasing the stack order for the cursor which puts the cursor in front of every element that is present on the website.
+    </p>
+
+
+    <img src="/Images/cursor-front.jpg" alt="cursor">
+
+
+<p>After fixing the issue, it was time to make the cursor move by using JavaScript.
+These were the first few steps I had to execute to get the cursor working: <br><br>
+
+This query selector let mouseCursor = document.querySelector(".cursor"); this is required to get the mouse cursor, the query selector targets the mouse.<br><br>
+
+let nav = document.querySelectorAll('a');  This selector was needed to target the nav links, the reason for writing selector all is because it allows me to target all of the nav links.<br><br>
+
+ The window.addEventListener("mousemove", cursor);  will grabs the window with an eventlistenr, and  I wrote 'mousemoves' which means that whenever the mouse moves we can run a function called cursor , in this case.<br><br>
+
+function cursor(e ){ we make the function have access to 'e' which allows you to get a mouse event, we need to look for pageX and page Y, this gives our cordinates for where the mouse postion is. <br>
+
+ mouseCursor.style.top = e.pageY +"px";
+   mouseCursor.style.left = e.pageX + "px";
+</p>
+
+
+
+<p class="codepen" data-height="347" data-theme-id="dark" data-default-tab="js,result" data-user="sayam-web" data-slug-hash="NWqJvwe" data-preview="true" style="height: 347px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="STEP 4">
+    <span>See the Pen <a href="https://codepen.io/sayam-web/pen/NWqJvwe">
+    STEP 4</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+  <p>
+    After this I stumbled on another issue as I noticed when moving the mouse , the cursor pointer was not exactly on top of the customised shape. I found out I needed to put in transform: translate (-50%, -50%); which then perfectly put the pointer on the top of the custom cursor. This was due to the help of these 3 sources;
+    <br>
+<br>
+    A <span class="blg-links"><a href="https://www.codesdope.com/blog/article/animate-your-website-elements-with-css-transforms/">blog post</a></span> by codesdope: animate your website element with CSS transform, 
+   <br>
+   <br>
+   A <span class="blg-links"><a href="https://books.google.co.uk/books/about/Learning_Web_Design.html?id=GG0qMQAACAAJ&redir_esc=y">book</a></span> by Jennifer Niederst Robbins: Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web graphics.
+   <br>
+   <br>
+   And by a<span class="blg-links"><a href="https://www.youtube.com/watch?v=rfpRZ2t_BrQ">YouTube video</a></span> YouTube video created by design course on how to create a custom cursor.
+  </p>
+
+
+  <p>As the cursor acted as a div, this meant that when hovering over a link meant it wasn’t selectable, so to make things selectable I made sure to add pointer event and set it to none.<br>  
+    The reason for doing was due to indicating when an element is not the target of a pointer event, the value none instructs the pointer event to go through <span class="blg-links"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events">(pointer-events, n.d.).</a></span>
+    </p>
+
+
+
+    <p>  
+        The code below allowed me to loop over the link and for each link we run a function in here, basically looping over every link and for each link we want to see when the user moves the mouse over the links and when the mouse leaves. Based on that we must add a class and remove a class
+        
+        so, to make the transition when the user moves away from the link, I added an event listener and named it 'mouse over. and I ran it with a function over the mouseCursor. I added a eventlist and named it <span class="blg-links">‘cursor-grow'</span>
+     and added style properties to it, so it takes on different shape when hovering away from a link. Click on the hamburger menu and hover over the link to see the result.
+     <br><br>
+
+
+
+     nav.forEach(link => {   
+        link.addEventListener('mouseover', () =>{
+        mouseCursor.classList.remove("cursor-grow");
+        });  
+    
+        </p>
+
+        <p class="codepen" data-height="504" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="MWwxOyV" data-preview="true" style="height: 504px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="step 5">
+            <span>See the Pen <a href="https://codepen.io/sayam-web/pen/MWwxOyV">
+            step 5</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <h2>Evaluation</h2>
+
+          <p>Even though there were quite a few problems along the lines of creating this cursor, I managed to complete and make the technology work. The problems arose as I am not comfortable enough using JavaScript when compared to using CSS.</p>
+
+
+
+
+<div class="refrences">
+    <h3>Refrences:</h3>
+   <p class="refrence-text">Cope, S. (2019) cursor. CSS-Tricks. [Online] [Accessed on 25th March 2020]<span class="blg-links"><a href="https://css-tricks.com/almanac/properties/c/cursor/.">https://css-tricks.com/almanac/properties/c/cursor/.</a></span> 
+       <br><br>
+       coursedesign (2019) YouTube. Creating Custom Cursors - CSS Only, and JavaScript! [Online] [Accessed on 25th March 2020]<span class="blg-links"><a href="https://www.youtube.com/watch?v=rfpRZ2t_BrQ&t=1179s.">https://www.youtube.com/watch?v=rfpRZ2t_BrQ&t=1179s.</a></span>  
+       <br><br>
+       Niederst Robbins, J. (2012) Learning Web design: a beginner’s guide to HTML, CSS, JavaScript, and web graphics. Fourth edition, Beijing: O’Reilly.
+       <br><br>
+pointer-events (n.d.) MDN Web Docs. [Online] [Accessed on 25th March 2020] <span class="blg-links"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events.">https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events.</a></span>  
+
+   </p>
+</div>
+
+
+
+
+            </div>
+</div>
+
+
+     
+
+
+
+
+
+
+      <footer>
+        <div class="copyright">
+          <p> &#169; 2020 Website created by Sayam Ajmal.</p>
+          </div>
+      </footer>
+
+
+
+      <script src="/JavaScript/custom-cursor.js"></script>
+
+
+      
+
+
+      </body>
+      </html>

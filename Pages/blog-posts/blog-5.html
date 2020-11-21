@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="CSS animation and transitions - blog 5">
+    <meta name="description" content="CSS animation and transition project">
+    <meta name="keywords" content="portfolio,CSS,animation,transition, personal portfolio, sayam ajmal portfolio, design, blog 5,web developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>CSS animation and transitions - blog 5</title>
+</head>
+<body>
+
+
+  <div class="cursor"></div>
+ 
+
+    <header>
+
+
+        <h1 class="logo"><a href="/index.html">Sayam Ajmal</a></h1>
+        
+        <div class="circle-two"></div>
+        <div class="text-inside"><p>PORTFOLIO</p></div>
+        <div class="social-media">
+
+          <a href="https://www.facebook.com/sasincerity.sayamajmal"><img src="/Images/facebook.svg" alt="Facebook logo" class="facebook"></a>
+
+          <a href="https://github.com/sayam-aj"><img src="/Images/github-image.svg" alt="github logo"  class="github"></a>
+
+          <a href="https://twitter.com/Sayam_Ajmal"><img src="/Images/twitter.svg"  alt="Twitter logo" class="twitter"></a> 
+        </div>
+
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav>
+          <ul>
+            
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/Pages/blogs.html">BLOGS</a></li>
+                <li><a href="/Pages/gallery.html">GALLERY</a></li>
+                     <li><a href="/Pages/contact.html">CONTACT</a></li>
+                     <li class="circle-four"></li>
+          </ul>
+        </nav>
+
+         <!-- THIS WILL MAKE A TOGGLE ICON -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+
+
+      </header>
+
+
+      <div class="blg-contnr">
+
+        <div class="blg-titles">
+            <h1>CSS animation & transitions</h1>
+        </div>
+    
+        <div class="blg-texts">
+            <h2>AIMS & OBJECTIVES</h2>
+            <p>To implement different types of CSS animations and transitions throughout the portfolio to make the portfolio more appealing for the users, initially improving user experience overall.
+              To achieve this I will use CSS animation and transition properties.
+            </p>
+    
+            <br>
+
+
+              <h2>Definition</h2>
+
+              <p>In one to create CSS animation, the person is required to add style properties to the element they are wanting to animate for appearance purposes and then add animation properties, which typically include: duration, timing, timing-function, delay, direction, fill-mode, play-state and iteration-count <span class="blg-links"><a href="https://www.w3schools.com/cssref/css3_pr_animation.asp.">(CSS animation Property, n.d.).</a></span>
+                <br>
+                <br>
+              
+                Once that is done, you would be required to describe the appearance, which is achieved by giving keyframes. Keyframe are needed in order to describe how the animated element should render at a given time also, since the in-CSS animations timing is required to conduct animations, keyframes are required to use percentage to indicate time during the animation sequence <span class="blg-links"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations.">(Using CSS animations, n.d.).</a></span>
+                <br>
+                In the animation process 0% typically indicated the beginning of the sequence whereas 100% indicated the ending of the sequence <span class="blg-links"><a href="https://thoughtbot.com/blog/css-animation-for-beginners">(Cope, 2019).</a></span>
+                <br>
+                <br>
+                Many websites use CSS animation on a smaller scale for example, for creating a hamburger menu, or animated navigations text etc. So, I thought of increasing the standards and use CSS animation and transitions to create a layout for my portfolio in order to increase user experience. The layout would consist of a wave type shape that would be constantly moving and would be placed near the margin of the screen, so I can place the content in the middle of it, which also improves accessibility.
+                <br>
+                <br>
+                The reason for doing this project is because I consider myself to be an amateur at using CSS, as I already know how to use CSS in a smaller scale. In the portfolio you will be able to see a hamburger menu constructed using pure CSS without using JavaScript. I also have used CSS transitions throughout the portfolio for user experience purposes. Therefore, I wanted to go beyond my comfort zone and take on a bigger project by creating the layout and using CSS animation throughout the portfolio using CSS animations and transitions.
+              </p>
+
+
+              <h2>Tools and Technologies</h2>
+
+              <p>To set this up I used CSS animation which consists of two mechanisms which one of them allows you to style component, typically describing the CSS animation and the other is a pair of keyframes. Keyframes allows the users to usually indicate the beginning and the end of the animation; also allowing possible intermediate waypoints, therefore, making endless opportunities to generate animations overall.</p>
+
+              <h2>Location</h2>
+
+<p><span class="blg-links"><a href="https://codepen.io/sayam-web/pens/public">Link to repository</a></span></p>
+
+
+              <h2>How</h2>
+
+              <p>So, as I wanted my content to be mostly in the middle of the page for the ease of viewing purposes for the users That also meant that there would have been too much whitespace alongside the margin of the screen, therefore, I wanted some shape to take place near the margin, to get rid of the extra whitespace .The animated shape that I wanted alongside the margin was to look like a shape of a circle. </p>
+
+              <p>The 1st step I took was to create a class called circle-two. Then I gave some initial styling properties to create the circle. I did this by applying the border attribute and giving it a colour , which in this case it’ a white. Then I applied border-radius and gave it a value of 50% which converts shape from a square to a circle.
+                I also gave it a position attribute of absolute , which allows you to position your element on the page wherever you want, without affecting other element.
+                </p>
+
+                <p class="codepen" data-height="210" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="NWqJMRL" data-preview="true" style="height: 210px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="anim &amp;amp; transi step 1">
+                  <span>See the Pen <a href="https://codepen.io/sayam-web/pen/NWqJMRL">
+                  anim &amp; transi step 1</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+                <img src="/Images/margin-show.jpg" alt="">
+
+
+
+                <p>I was able to change the element’s default position by using the helper properties (top and left)<span class="blg-links"><a href="https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/.">(Eygi, 2018).</a></span> 
+                  Therefore, I increased the size of the shape by increasing the value of the border and changed the values of top and left to align where the extra space is on the left.
+                  </p>
+
+
+
+                  <p class="codepen" data-height="593" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="yLNwjbW" data-preview="true" style="height: 593px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="anim &amp;amp; transi part 2">
+                    <span>See the Pen <a href="https://codepen.io/sayam-web/pen/yLNwjbW">
+                    anim &amp; transi part 2</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                  </p>
+                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+                  <p>After the shape had been constructed I realised why not make the shape stay in its fixed position and make the social media icons to appear on the shape, which will allow users to constantly see the social media icons and make users an easier way of contacting me as it’s always present front of the user.
+                    I did this by then moving my class in the header section as the header section already had fixed attribute applied to it.
+                    </p>
+
+
+                    <p class="codepen" data-height="566" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="JjdzvyR" data-preview="true" style="height: 566px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="anim &amp;amp; transi part 3">
+                      <span>See the Pen <a href="https://codepen.io/sayam-web/pen/JjdzvyR">
+                      anim &amp; transi part 3</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+                    <p>After this it was time to animate the shape.so I named it spin. And applied it to the element. I also  gave the animation property linear is because I want the animation to have the same speed from the start to end and also gave it infinite property as it makes the animation to go on forever, hence why it stands for infinite. </p>
+
+                    <img src="/Images/linear-infinte.jpg" alt="linear infinite property">
+
+
+                    <p>keyframes are required to use percentage to indicate time during the animation sequence but I  ran into a problem as I noticed that the shape wasn’t moving at all. Even when changing the time duration , nothing seemed to be moving, so I figured out the problem, it was due to the shape being  a perfect circle (50%).
+                    </p>
+
+                    <img src="/Images/non-moving.jpg" alt="circle and console log">
+
+
+                    <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="jOPJxKo" data-preview="true" style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="anim &amp;amp; transi part 4">
+                      <span>See the Pen <a href="https://codepen.io/sayam-web/pen/jOPJxKo">
+                      anim &amp; transi part 4</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+                    <p>So as soon as I changed the border radius to 40%, the shape started moving and formed a wave animation, which I liked even more.
+                    </p>
+
+
+                    <p class="codepen" data-height="461" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="QWborVR" data-preview="true" style="height: 461px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="anim &amp;amp; transi part 5">
+                      <span>See the Pen <a href="https://codepen.io/sayam-web/pen/QWborVR">
+                      anim &amp; transi part 5</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+                    <p>
+                      I also wanted the animation to start at 60% and end at 100% because as I was inserting different values for the beginning of the animation, 60% seemed to make the movement of the animation much smoother compared to putting a value of 0%.
+                     </p>
+
+                     <img src="/Images/keyframes.jpg" alt="CSS keyframes">
+
+                     <p>I also gave the overflow property with the value of hidden, to have a better control of the layout to clip any thing that is going over the height or the width perspectives of the screen.
+                       <br>
+                       <br>
+                       This is the end result. 
+                     </p>
+
+                     <p class="codepen" data-height="555" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="bGdZMZJ" data-preview="true" style="height: 555px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="anim and transi part 6">
+                      <span>See the Pen <a href="https://codepen.io/sayam-web/pen/bGdZMZJ">
+                      anim and transi part 6</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+                    <p>I also added the same CSS animation throughout the portfolio and other component of the portfolio where I thought the animation would be suited best. You will be able to find the same Animation when clicking on the hamburger menu and viewing the nav links and when viewing the blog cards on the blog page. They’ve all been edited differently height, width or position wise to suit the perspective of the design.</p>
+
+                    <p>View it below</p>
+
+
+                    <p class="codepen" data-height="384" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="gOpEKYQ" data-preview="true" style="height: 384px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="blog cards animation">
+                      <span>See the Pen <a href="https://codepen.io/sayam-web/pen/gOpEKYQ">
+                      blog cards animation</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    
+                    
+                    <p>zoom out for the one below to see the result.</p>
+
+
+                    <p class="codepen" data-height="536" data-theme-id="dark" data-default-tab="css,result" data-user="sayam-web" data-slug-hash="poJYKjj" data-preview="true" style="height: 536px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="wave on hamburger screen">
+                      <span>See the Pen <a href="https://codepen.io/sayam-web/pen/poJYKjj">
+                      wave on hamburger screen</a> by sayam ajmal (<a href="https://codepen.io/sayam-web">@sayam-web</a>)
+                      on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+                    <h2>Evaluation</h2>
+                    <p>Overall the aim and the objective of the project was met therefore I am satisfied with the outcome. The CSS animation works perfectly fine and is altered to be responsive as well.</p>
+
+
+
+
+                    <div class="refrences">
+                      <h3>Refrences:</h3>
+
+
+                      <p class="refrence-text">
+                      
+                          
+                          Cope, R. (2019) CSS Animation for Beginners. thoughtbot. [Online] [Accessed on 18th March 2020] <span class="blg-links"><a href="https://thoughtbot.com/blog/css-animation-for-beginners.">https://thoughtbot.com/blog/css-animation-for-beginners.</a></span> 
+                          <br><br>
+
+
+                          CSS animation Property (n.d.). [Online] [Accessed on 19th March 2020] <span class="blg-links"><a href="https://www.w3schools.com/cssref/css3_pr_animation.asp.">https://www.w3schools.com/cssref/css3_pr_animation.asp.</a></span> 
+                          <br><br>
+
+                          Eygi, C. (2018) How to use the position property in CSS to align elements. freeCodeCamp.org. [Online] [Accessed on 20th March 2020] <span class="blg-links"><a href="https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/.">https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/.</a></span> 
+                          <br><br>
+
+
+                          Using CSS animations (n.d.) MDN Web Docs. [Online] [Accessed on 19th March 2020] <span class="blg-links"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations."><br>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations.</a></span>
+
+
+
+                      </p>
+
+
+
+                      </div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+      <footer>
+        <div class="copyright">
+          <p> &#169; 2020 Website created by Sayam Ajmal.</p>
+          </div>
+      </footer>
+
+
+
+      <script src="/JavaScript/custom-cursor.js"></script>
+
+
+      
+
+
+      </body>
+      </html>

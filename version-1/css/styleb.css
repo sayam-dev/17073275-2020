@@ -1,0 +1,869 @@
+html{
+scroll-behavior: smooth; /*results the animation to be smooth when scrolling*/
+}
+body {
+    padding: 0;
+    margin:0;
+    font-family:'Roboto', sans-serif;
+    margin:auto 20px;
+}
+/*Header start*/
+header {
+    display: flex;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-decoration: underline red;
+    justify-content: center;
+   
+    
+
+    /*font style for header*/
+}
+
+ header h1{
+    text-align:center;
+}
+
+
+/*header end*/
+
+
+
+
+/*nav wrap start*/
+.upper-nav ul {
+    display: grid;
+    flex-wrap:wrap;
+    list-style: none;
+   height:32vh;
+    box-sizing: border-box;
+    padding-right: 1em;
+    
+}
+
+.upper-nav  li {
+    padding:1em;
+    
+    text-transform: uppercase;
+    text-align:center;
+    
+    letter-spacing: 0.5em;
+list-style: none;
+}
+
+.upper-nav ul li:hover{
+transform: scale(1.1);
+background: linear-gradient(to left, grey 10%, whitesmoke 50%);
+transition: all .2s linear; /*makes the animation smooth*/
+
+ }
+
+.upper-nav ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+/* nav wrap end*/
+
+/*sayam intro*/
+.sayam-intro{
+   height:100%;
+   flex-wrap: wrap; /*controls direction which lines are stacked*/
+   box-sizing: border-box;
+   background: rgb(231, 84, 109);
+   margin-bottom: 5px;
+  
+   
+}
+
+/*sayam-intro pic*/
+.sayam-intro img {
+    max-width: 20%;
+    float: left;
+    
+    padding-top:50px;
+    padding-left:30px;
+  }
+/*end intro pic*/
+/*sayam-intro paragraph*/
+.sayam-intro p{
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+line-height:5.8em;
+margin-top:50px;
+margin-bottom:70px;
+border-top: 5px solid black;
+color:white;
+text-align: center;
+
+}
+.sayam-intro p:first-letter{ /*targets the first letter*/
+    display:flex;
+    float:left;
+    margin:1px;
+    color:white;
+    font-size:400%;
+text-decoration-line: underline;
+    
+}
+/*sayam-intro paragraph end*/
+
+/*background gif start*/
+.background-video{
+    margin-top:5px;
+    display: flex;;
+height:100vh;
+
+
+}
+.background-video img{
+    min-width:100%;
+height:100%;
+
+
+}
+/*end of gif*/
+
+/*start of intro for vid*/
+.video-intro{
+    background: linear-gradient( to left, black 20% , red 60%, rgb(231, 84, 109) 30%); /*different types of colors*/
+    position:relative;
+    height: 100vh;
+   
+}
+.video-intro p{
+    color:white;
+    text-align: center;
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    font-size:50px;
+    top: 50%;
+    width: 100%;   
+    
+    border-top:solid 5px white;
+    border-bottom:solid 5px white;
+}
+
+.video-intro p::first-letter{
+font-size:110px;
+color:white;
+text-decoration: underline;
+}
+/*photo start*/
+.photo-intro{
+    background: linear-gradient( to left, #CAC6C6 20% , #daeaf4 60%, #a0b8a0 30%);
+    position:relative;
+    height: 100vh;
+    border-top:solid 5px white;
+    
+    
+}
+.photo-intro p{
+    color: white;
+    text-align: center;
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    font-size:50px;
+    top: 50%;
+    width: 100%;   
+    font-family:Arial, Helvetica, sans-serif ;
+    border-top:solid 5px black;
+    border-bottom:solid 5px black;
+}
+
+.photo-intro p::first-letter{
+font-size:110px;
+color:white;
+text-decoration: underline;
+}
+/*photo intro end*/
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50vh;
+height:100vh;
+
+    
+    
+}
+
+/*photos*/
+.box2{
+
+grid-row-start:1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end:1;
+color:white;
+display: flex;
+margin-top: 30px;
+
+}
+
+.box2-description{
+grid-row-start:1;
+grid-row-end:1;
+grid-column-start:2;
+grid-column-end:2;
+
+}
+.box2-description p{
+    display: flex;
+    background:#a0b8a0;
+    height:50vh;
+    color:white;
+   font-style:italic;
+    line-height: 2em;
+    padding:5px;
+}
+.box2 img{
+    max-width: 104%;
+    display: flex;
+   
+    
+    margin-top:5px;
+    
+}
+
+
+.box3{
+display: flex;
+grid-column-start:2;   
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 2;
+
+
+}
+
+.box3-description{
+    grid-row-start:2;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 1;
+    
+
+}
+
+.box3-description p{
+    display: flex;
+    background:  #daeaf4;
+    height:45vh;
+    color:black;
+     font-style: italic;
+    line-height: 2em;
+    padding:5px;
+    
+}
+.box3 img{
+    max-width:100%;
+    
+   
+    
+   
+}
+.style{
+    background:rgb(202, 198, 198);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end: 3;
+    max-height: 5%;
+    color:white;
+    border-top:3px solid black;
+    border-bottom: 3px solid black;
+    
+}
+  
+  /*photos end*/
+
+
+
+/*start of blogs*/  
+
+.blog-intro{
+    background: linear-gradient( to left, lightpink 20%  , pink 30%);
+    position:relative;
+    height: 100vh;
+    border-top:solid 5px white;
+    
+}
+.blog-intro p{
+color: white;
+   
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: absolute;
+    width:55%;
+    font-size:50px;
+    top: 50%;
+      
+    font-family:Arial, Helvetica, sans-serif ;
+    writing-mode: vertical-rl;
+text-orientation: mixed;
+}
+.blog-intro p::first-letter{
+    font-size:160px;
+    color:white;
+    text-decoration: underline;
+    }
+
+
+section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr)) ; 
+    /*auto-fit =stretches everyhting out to the available space*/
+    /*200px 200px 200px;  or repeat(3, 200px);*/
+ grid-gap: 90px;
+ background: lightpink;
+ margin-top: 30px;
+ 
+ 
+ height:100%;
+ 
+}
+.container-blog{
+    
+    border:5px solid black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    
+}
+.container-blog:hover{
+    transform:scale(0.9); /*below 1 makes it go smaller and instead of zooming in, it makes the animation to zoom out resulting the container class; in this case to go smaller. */
+    transition:all .6s linear; ;
+}
+.container-blog img{
+    max-width:100%;
+    height:auto;
+    cursor: pointer;
+    
+}
+/*styling of fonts for blog section*/
+.container-blog h2{
+    padding:10px;
+    text-decoration:underline;
+    text-align: center;
+}
+
+.container-blog h3{
+    font-size: 15px;
+    padding:3px;
+    padding-left:10px;   
+    text-align: center;
+}
+.container-blog h4{
+    padding-left: 10px;
+    font-size: 14px;
+    font-style: italic;  
+    text-align: center;
+}
+
+/*end of blogs*/
+
+
+
+/*START OF CONTACT.HTML*/
+.animate-box{
+  
+  
+  
+  animation-name: fade;
+  animation-duration: 12s;
+ 
+}
+
+
+
+/* Standard syntax */
+@keyframes fade {
+  0%   {background-color: black;}
+  25%  {background-color:#434343 ;}
+  50%  {background-color:rgb(231, 84, 109);} 
+  75%  {background-color:lightpink ;}
+  100% {background-color: white;}
+  /*it changes color after certain amount of time, in this particular case percentage for .e.g. when it reaches 50% it will change the background color to rgb(231, 84,109)*/
+}
+
+
+.animate-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:100%;
+    
+    
+/*form contact*/    
+}
+.contact-box{
+    background: black;
+    color:white;
+    padding:10px;
+    margin:10px;
+    justify-content: center;
+    border:10px solid lightpink;
+    border-top: 20px;
+  
+    
+    
+}
+.contact-box .form-input input{
+    width:100%;
+    padding:1px;
+    background:transparent;
+    
+    transition:.9s;
+    border-bottom:1px solid grey;
+outline:none;
+margin-bottom:30px;
+color:white;
+    
+}
+
+
+
+.contact-box h2{
+    text-align: center;
+    color:white;   
+    letter-spacing: 0.1em;
+    text-decoration: underline red;
+}
+
+.form-input [type="Submit"] {
+margin-top: 60px;
+cursor: pointer; /*changes the default cursor to a pointer*/
+
+}
+
+
+.form-input textarea{
+    padding:2px;
+    background: black;  /*textarea for the message*/
+    color:white;
+    width:100%;
+}
+
+.contact-box p{
+    line-height: 2em;
+    letter-spacing: 0.2em; /*intro for contact*/
+    max-width:100%;
+   text-align: center;
+   
+}
+/*Someone please hire me , I need money!*/
+
+/*footer start*/
+footer{
+    background:black;
+    color:white;
+   text-align: center;
+}
+footer img{
+    width:3%;
+    background:white;
+    padding:5px;
+    border-radius: 50%;
+    margin:5px;
+}
+footer img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease;
+    color:pink;
+}
+/*FOOTER BUTTON*/
+button{
+    
+    border-radius:25%; /*changes the border of the default shape*/
+    border:5px solid white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    background: black;
+    
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all .2s ease;
+}
+button a{
+    color:white;
+}
+    
+
+footer p{
+    text-decoration: underline red;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+/*official blogpage1*/
+.writingBlog1container{
+    
+    border:5px solid black;
+    background: #daeaf4;
+    display: block;
+    color:black;
+    
+}
+
+ .writingBlog1container .paragraph h1{
+    text-align: center;
+    text-decoration: underline red;
+    
+}
+.writingBlog1container h2{
+    text-decoration: underline red;
+    color:black;
+    margin:10px;
+}
+
+.writingBlog1container .paragraph p{
+    line-height: 2em;
+    font-size:20px;
+    margin:10px;
+}
+.writingBlog1container .paragraph h4{
+    color:Red;
+    margin:10px;
+}
+
+
+ .paragraph .paragraph1Images img{
+     max-width: 100%;
+     display: flex;
+     justify-items: center;
+    
+ }
+ .writingBlog1container .paragraph p a{
+     color:red;
+ }
+
+/*end of  official blogpost1*/
+
+
+.refrences-container{
+    display: flex;
+}
+
+ .refrences{
+     background:lightpink;
+     font-size:18px;
+     color:White;
+     
+ }
+ .refrences h4{
+     text-decoration: underline black;
+     font-size: 20px;
+     margin:10px;
+     color:black;
+     text-align: center;
+    
+ }
+ .refrences p{
+     
+     margin:10px;
+     text-align: center;
+     
+ }
+
+.refrences a{
+    color:black;
+  
+}
+
+
+/*start of blogpost2*/
+
+
+
+.blog2Paragraph1container{
+display: flex;
+border:5px solid black;
+}
+.blog2Paragraph1{
+    background:#daeaf4;;
+}
+
+.blog2Paragraph1 h2{
+    text-decoration: underline black;
+}
+.blog2Paragraph1 p{
+    font-size: 20px;
+    line-height: 2em;
+}
+
+/*blog grid*/
+
+.blogWrap{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)) ; 
+    /*auto-fit =stretches everyhting out to the available space*/
+    /*200px 200px 200px;  or repeat(3, 200px);*/
+ grid-gap: 90px;
+ background: #daeaf4;
+ margin-top: 30px;
+ height:100%;
+ 
+}
+.blog2grid{
+    border:5px solid black;
+}
+.blog2grid img{
+    max-width: 100%;
+}
+.blog2grid h2{
+    text-decoration: underline black;
+
+}
+
+.blogGrid p{
+    line-height: 2em;
+    font-size: 16px;
+}
+
+.blog2Paragraph5container{
+    display: flex;
+    border:5px solid black;
+    margin-top:10px;
+    margin:20px;
+    }
+    .blog2Paragraph5{
+        background:#daeaf4;
+    }
+.blog2Paragraph5 h2{
+    text-decoration: underline black;
+
+}
+.blog2Paragraph5 p{
+    line-height: 2em;
+    font-size: 20px;
+}
+/*end of blogpost2*/
+
+
+
+/*start of CV*/
+
+.cvContainer{
+    display: block;
+    
+    margin:60px;
+    background:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cvHeader h1{
+        font-size: 50px;
+    }
+
+.cvHeader{
+    border-bottom:5px solid lightskyblue;
+}
+.cvIntro{
+    border:2px solid black;
+}
+.cvIntro h2{
+    text-decoration: underline lightskyblue;
+}
+.cvIntroduction p{
+    line-height: 3em;
+}
+
+/*portfolio starts here*/
+.workContainer{
+    display: grid;
+grid-template-rows:repeat(auto-fit, minmax(15rem, 1fr));
+margin:10px;
+border:5px solid black;
+background:#a0b8a0;
+color:white;
+}
+
+.studyMind img{
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+    border:5px solid white;
+}
+.studyMind h2{
+    text-align: center;
+}
+
+
+
+
+.workContainer2{
+    display: grid;
+grid-template-columns:repeat(auto-fit, minmax(20rem, 1fr));
+grid-gap: 90px;
+margin-top: 30px;
+margin:15px;
+}
+
+.photoManchester img{
+max-width: 100%;
+border:5px solid #a0b8a0;
+
+}
+.photoContent p{
+    color:#a0b8a0;
+    text-decoration: underline black;
+    text-align: center;
+}
+.introductionManchester p{
+    margin:10px;
+    font-size: 39px;
+    margin-top: 20px;
+    padding:10px;
+    
+
+}
+
+/*end of portfolio*/
+
+/*blogpost3*/
+.blog3container{
+    display: grid;
+grid-template-rows:repeat(auto-fit, minmax(13rem, 1fr));
+margin:auto auto;
+border:5px solid black;
+background:#a0b8a0;
+color:white;
+;
+}
+.blog3container img{
+width: 99.5%;
+margin:4px
+}
+
+.blog3content{
+    border:5px solid black;
+    margin:20px;
+}
+.blog3content h1{
+    text-align: center;
+}
+/*blogpost3 end*/
+
+.paragraph {max-width: 75ch; margin: 0 auto;} 
+/*makes max letter to 75 characters*/
+
+
+/*media query*/
+@media only screen and (min-width:400px){
+    .blogWrap{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(37rem, 1fr)) ; 
+        /*auto-fit =stretches everyhting out to the available space*/
+        /*200px 200px 200px;  or repeat(3, 200px);*/
+     grid-gap: 90px;
+     background: #daeaf4;
+     margin-top: 30px;
+     height:100%;
+     margin:20px;
+}
+.blog2Paragraph1container{
+    display: flex;
+    border:5px solid black;
+    margin:20px;
+}
+footer img{
+    width:3%;
+    background:white;
+    padding:5px;
+    border-radius: 50%;
+    margin:5px;
+    height:50%;
+}
+.animate-box{
+    display: block;
+    margin:0 auto;
+    max-width:50%;
+    max-height: 5%;
+}
+
+
+/*presentation*/
+section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(13rem, 1fr)) ; 
+    /*auto-fit =stretches everyhting out to the available space*/
+    /*minmax =function is used to specify the minimum width for the column*/
+
+
+
+
+ grid-gap: 90px;
+ background: lightpink;
+ margin-top: 30px;
+ height:100%;
+ 
+}
+
+}
+
+
+
+@media only screen and (max-width:800px){
+    .blogWrap{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)) ; 
+        /*auto-fit =stretches everyhting out to the available space*/
+        /*200px 200px 200px;  or repeat(3, 200px);*/
+     grid-gap: 90px;
+     background: #daeaf4;
+     margin-top: 30px;
+     height:100%;
+     margin:20px;
+}
+.blog2Paragraph1container{
+    display: flex;
+    border:5px solid black;
+    margin:20px;
+}
+
+
+footer img{
+    width:3%;
+    background:white;
+    padding:5px;
+    border-radius: 50%;
+    margin:5px;
+    height:27px;
+}
+
+
+
+
+section{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)) ;       
+    /*auto-fit =stretches everyhting out to the available space*/
+    /*200px 200px 200px;  or repeat(3, 200px);*/
+ grid-gap: 90px;
+ background: lightpink;
+ margin-top: 30px;
+ height:100%;
+ 
+}
+.animate-box{
+    display: block;
+    margin:0 auto;
+    max-width:100%;
+}
+
+}
